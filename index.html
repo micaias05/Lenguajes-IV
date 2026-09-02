@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesshet.css">
+    <title>TP1</title>
+</head>
+<body>
+    <!-- Una barra en la parte superiror (encabezado) para poner una flecha para volver atras desde la web -->
+    
+    <div class="barra-superior" id="barra_superior" style="display: none;">
+        <button class="boton-volver" id="volver_geo" title="Volver al inicio">
+            <!-- Este es el código SVG de una flecha copiado de Heroicons -->
+            <svg viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>
+        </button>
+        <h2 id="titulo_encabezado"></h2>
+    </div>
+
+    <div id="main_vista">
+        <a href="#geolocalizacion" class="clase_boton" id="geolocalizacion_btn">Geolocalización</a>
+        <a href="#subir_img" class="clase_boton" id="subir_img_btn">Subir Imagen</a>
+    </div>
+    <!-- Ahora vamos a definir las 2 partes donde van a estar las funcionalidades-->
+    
+    <!-- Esto sería la parte de la geolocalización-->
+    <div id="geolocalizacion_vista" style="display: none;">
+        <h2>Tu ubicación Actual</h2>
+        <p>Latitud: <span id="latitud_valor"></span></p>
+        <p>Longitud: <span id="longitud_valor"></span></p>
+    </div>
+
+    <!-- Esta sería la parte donde se puede subir la imagen-->
+     <div id="subir_img_vista" style="display: none;">
+        <h2>Sube tu imagen:</h2>
+        <div id="drop_zone"></div>
+        <img src="" alt="" id="img_subida">
+        <span id="msg_formato_erroneo" style="display: none;">El formato del archivo no es valido! Solo archivos .jpg y .png</span>
+     </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
