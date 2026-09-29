@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Lenguajes-IV/static/css/main.c567cb35.css",
-    "main.js": "/Lenguajes-IV/static/js/main.2da785fd.js",
+    "main.css": "/Lenguajes-IV/static/css/main.f432981d.css",
+    "main.js": "/Lenguajes-IV/static/js/main.14080ea4.js",
     "index.html": "/Lenguajes-IV/index.html",
-    "main.c567cb35.css.map": "/Lenguajes-IV/static/css/main.c567cb35.css.map",
-    "main.2da785fd.js.map": "/Lenguajes-IV/static/js/main.2da785fd.js.map"
+    "main.f432981d.css.map": "/Lenguajes-IV/static/css/main.f432981d.css.map",
+    "main.14080ea4.js.map": "/Lenguajes-IV/static/js/main.14080ea4.js.map"
   },
   "entrypoints": [
-    "static/css/main.c567cb35.css",
-    "static/js/main.2da785fd.js"
+    "static/css/main.f432981d.css",
+    "static/js/main.14080ea4.js"
   ]
 }
