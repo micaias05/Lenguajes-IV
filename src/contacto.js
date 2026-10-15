@@ -102,66 +102,89 @@ function Contacto(){
     }; 
 
     return(
-        <div className="contenedor-pagina">
-            <h1>Contacto</h1>
-            <p>Este es el apartado Contacto, bienvenido!
-                No se para que se quisiera poner en contacto con nosotros cuando claramente estamos en blanco, pero si aún así insiste podemos ser muy graciosos en ciertas ocasiones!
-            </p>
-            <form id="formulario" onSubmit={manejarEnvio}>
-                <h3>Registro</h3>
 
-                <label>Nombre:</label>
-                <input 
-                    type="text" 
-                    placeholder="Ingrese su nombre" 
+        <div className="contenedor-contacto">
+
+            {/* Columna izquierda: título, texto y formulario */}
+            <div>
+                <h1>Contacto</h1>
+                <p>
+                    Este es el apartado Contacto, bienvenido!
+                    No se para que se quisiera poner en contacto con nosotros cuando claramente estamos en blanco, pero si aún así insiste podemos ser muy graciosos en ciertas ocasiones!
+                </p>
+
+                <form id="formulario" onSubmit={manejarEnvio}>
+                    <h3>Registro</h3>
+
+                    <label>Nombre:</label>
+                    <input
+                    type="text"
+                    placeholder="Ingrese su nombre"
                     id="nombre"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
-                />
-                {errorNombre && <span className='mensaje-error'>{errorNombre}</span>}
-                
-                <label>Apellido:</label>
-                <input 
-                    type="text" 
-                    placeholder="Ingrese su apellido" 
+                    />
+                    {errorNombre && <span className='mensaje-error'>{errorNombre}</span>}
+
+                    <label>Apellido:</label>
+                    <input
+                    type="text"
+                    placeholder="Ingrese su apellido"
                     id="apellido"
                     value={apellido}
                     onChange={(e) => setApellido(e.target.value)}
-                />
-                {errorApellido && <span className='mensaje-error'>{errorApellido}</span>}
-                
-                <label>Email:</label>
-                <input 
-                    type="email" 
-                    placeholder="Ingrese su email" 
+                    />
+                    {errorApellido && <span className='mensaje-error'>{errorApellido}</span>}
+
+                    <label>Email:</label>
+                    <input
+                    type="email"
+                    placeholder="Ingrese su email"
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                />
-                {errorEmail && <span className='mensaje-error'>{errorEmail}</span>}
+                    />
+                    {errorEmail && <span className='mensaje-error'>{errorEmail}</span>}
 
-                <label>Ingrese un mensaje:</label>
-
-                <textarea 
-                    id="textarea" 
-                    maxLength="300" 
-                    rows="6" 
-                    cols="50" 
+                    <label>Ingrese un mensaje:</label>
+                    <textarea
+                    id="textarea"
+                    maxLength="300"
+                    rows="6"
+                    cols="50"
                     placeholder="Ingrese su mensaje:"
                     value={mensaje}
-                    onChange={(e) => setMensaje(e.target.value)}    
-                ></textarea>
-                {errorMensaje && <span className='mensaje-error'>{errorMensaje}</span>}
+                    onChange={(e) => setMensaje(e.target.value)}
+                    ></textarea>
+                    {errorMensaje && <span className='mensaje-error'>{errorMensaje}</span>}
 
-                <button id="btnEnviar" type="submit">Enviar formulario</button>
+                    <button id="btnEnviar" type="submit">Enviar formulario</button>
 
-                {estadoEnvio.mensaje && (
+                    {estadoEnvio.mensaje && (
                     <span className={`alerta-envio ${estadoEnvio.tipo}`}>
                         {estadoEnvio.mensaje}
                     </span>
-                )}
-            </form>
+                    )}
+                </form>
+            </div>
+
+            {/* Columna derecha: el mapa */}
+            <div>
+                <h3>Nuestra ubicación</h3>
+                <iframe
+                    title="Ubicación de la empresa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11956.287271906282!2d-65.38539736678958!3d-24.736157881965813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc14f9aaaaaab%3A0x69dac60239564277!2sUniversidad%20Cat%C3%B3lica%20de%20Salta!5e0!3m2!1ses-419!2sar!4v1792107789419!5m2!1ses-419!2sar"
+                    width="100%"
+                    height="500"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+
         </div>
+
+
     );
 }
 
