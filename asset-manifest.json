@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/Lenguajes-IV/static/css/main.f432981d.css",
-    "main.js": "/Lenguajes-IV/static/js/main.14080ea4.js",
+    "main.css": "/Lenguajes-IV/static/css/main.ca6ca3ec.css",
+    "main.js": "/Lenguajes-IV/static/js/main.5f5f05ad.js",
+    "static/media/arqenredes.png": "/Lenguajes-IV/static/media/arqenredes.66f01171e8cd0d8604fb.png",
+    "static/media/nodejs-sqlserver.jpg": "/Lenguajes-IV/static/media/nodejs-sqlserver.addc6b1acf76699d75e0.jpg",
+    "static/media/pythonypoo.png": "/Lenguajes-IV/static/media/pythonypoo.411c55bb8e6580d04e44.png",
     "index.html": "/Lenguajes-IV/index.html",
-    "main.f432981d.css.map": "/Lenguajes-IV/static/css/main.f432981d.css.map",
-    "main.14080ea4.js.map": "/Lenguajes-IV/static/js/main.14080ea4.js.map"
+    "main.ca6ca3ec.css.map": "/Lenguajes-IV/static/css/main.ca6ca3ec.css.map",
+    "main.5f5f05ad.js.map": "/Lenguajes-IV/static/js/main.5f5f05ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.f432981d.css",
-    "static/js/main.14080ea4.js"
+    "static/css/main.ca6ca3ec.css",
+    "static/js/main.5f5f05ad.js"
   ]
 }
